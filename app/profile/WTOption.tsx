@@ -9,11 +9,11 @@ interface WTOptionProps {
 
 const WTOption: React.FC<WTOptionProps> = ({
     ID,
-    workouts
+    workouts = false
 }) => {
     const router = useRouter();
 
-    if(!workouts) {
+    if(workouts === false) {
         return (
             <div className="text-center text-white" >
                     <button className={`
@@ -25,7 +25,7 @@ const WTOption: React.FC<WTOptionProps> = ({
                     hover:text-white
                     hover:bg-teal-600
                     `}
-                    onClick={() => router.push(`profile/${ID}`)}
+                    onClick={() => router.push(`../profile/${ID}`)}
                     >
                         Workouts
                     </button>
@@ -67,7 +67,7 @@ const WTOption: React.FC<WTOptionProps> = ({
                 hover:bg-teal-600
                 hover:text-white
                 `}
-                onClick={() => router.push(`templates/${ID}`)}
+                onClick={() => router.push(`../templates/${ID}`)}
                 >
                     Templates
                 </button>

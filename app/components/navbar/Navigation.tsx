@@ -33,7 +33,7 @@ const Navigation: React.FC<NavigationProps> = ({
                         <Link 
                             icon= {BsFillHouseDoorFill}
                             label= "Home"
-                            onClick={() => router.push(``)}
+                            onClick={() => router.push(`/`)}
                         />
                         <Link 
                             icon= {CgGym}

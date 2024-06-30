@@ -52,7 +52,7 @@ const ProfilePage = async ({ params }: { params: IParams }) => {
           <ClientOnly>
             <WTOption
               ID={user.id}
-              workouts
+              workouts={true}
             />
             <div className="justify-center items-center flex pt-4 overflow-hidden overflow-y-auto">
               <div

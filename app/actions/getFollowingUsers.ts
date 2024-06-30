@@ -32,13 +32,26 @@ export default async function getFollowingUsers() {
         },
       });
 
-      if(!SocialUsers) {
+      const followingUsers = SocialUsers.map(
+        (user) => {
+          return (
+            {
+              id: user.id,
+              name: user.name,
+              image: user.image
+            }
+          )
+        }
+      )
+
+      if(!followingUsers) {
         return null;
       }
 
+
       
 
-    return SocialUsers;
+    return followingUsers;
         }
      catch (error: any) {
         throw new Error(error);

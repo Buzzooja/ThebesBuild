@@ -1,10 +1,11 @@
+export const dynamic = 'force-dynamic'
+
 import Container from "./components/Container";
 import ClientOnly from "./components/ClientOnly";
 import EmptyState from "./components/EmptyState";
 import getWorkouts from "./actions/getWorkouts";
 import WorkoutCard from "./components/workouts/WorkoutCard";
 import getCurrentUser from "./actions/getCurrentUser";
-import getUserExercises from "./actions/getUserExercises";
 import useLoginModel from "./hooks/useLoginModel";
 import HomeHeading from "./components/HomeHeading";
 import WelcomePage from "./components/WelcomePage";

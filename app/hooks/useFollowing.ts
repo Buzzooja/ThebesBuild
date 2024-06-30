@@ -27,7 +27,7 @@ const useFollowing = ({
     const loginModel = useLoginModel();
 
     const isFollowing = useMemo(() => {
-        const list = user?.followerIds || [];
+        const list = user?.followedByIDs || [];
 
         return list.includes(currentUserId);
     }, [user, currentUserId]);

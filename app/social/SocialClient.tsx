@@ -1,6 +1,5 @@
 'use client';
 
-import { IconType } from "react-icons";
 import AddFriendModel from "../components/models/AddFriendModel";
 import useAddFriendModel from "../hooks/useAddFriendModel";
 import Button from "../components/Button";
